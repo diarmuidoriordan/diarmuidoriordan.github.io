@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*  
+	The below CSS for the menu is adapted
+	from the code/tutorials at these links:
+
+		https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
+
+		https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+		https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+
+		https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html
+
+		https://www.w3docs.com/tools/code-editor/9154
+*/
+
+.logo-and-menu {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.header-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: #003E78;
+    overflow: hidden;
+}
+
+.header-background {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    animation: bgFadeInAnimation ease 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+@keyframes bgFadeInAnimation { 
+    0% { 
+    	opacity: 0; 
+    	transform: scale(1.2);
+	} 
+  	100% { 
+        opacity: 1; 
+        transform: scale(1);
+    }
+}
+
+.header-logo {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    animation: logoFadeInAnimation ease 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes logoFadeInAnimation { 
+    0% { 
+    	opacity: 0; 
+    	transform: scale(0.8);
+	} 
+  	100% { 
+        opacity: 1; 
+        transform: scale(1);
+    }
+}
+
+nav {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #003E78;
+  border-top: 7px solid white;
+  border-bottom: 7px solid white;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #FFF;
+  color: #003E78;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #639FD7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #FFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #FFF;
+  color: #003E78;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*
+  The following CSS was written by me for the main body content.
+*/
+
+body {
+  display: grid;
+  overflow: auto;
+  font-size: 16px;
+  color: #464646;
+  line-height: 1.5;
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+}
+
+figure {
+  border: 3px solid #464646;
+  background-color: black;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+#home-page {
+  max-width: 100%;
+  max-height: auto;
+  padding-top: 30%;
+}
+
+#home-page p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#home-1 {
+  max-width: 25%;
+  float: left;
+  padding-left: 4%;
+  padding-right: 2%;
+  max-height: auto;
+  text-align: center;
+  border-right: 2px solid #464646;
+}
+
+#home-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #464646;
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: auto;
+}
+
+#home-2 {
+  max-width: 40%;
+  margin: 0 auto;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-height: auto;
+  border-right: 2px solid #464646;
+}
+
+#home-2 img {
+  max-width: 100%;
+}
+
+#home-3 {
+  max-width: 25%;
+  float: right;
+  padding-left: 2%;
+  padding-right: 4%;
+  max-height: auto;
+
+}
+
+
+/*
+	The following CSS was written by me for the Footer.
+*/
+
+.footer-wrapper {
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  	background-color: #003E78;
+  	border-top: 7px solid white;
+  	font-size: 12px;
+}
+
+#copyright-name-logo {
+	color: white;
+	display: grid;
+	float: right;
+	padding-right: 45px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 12px;
+    vertical-align: middle;
+    align-items: right;
+ }
+
+.social-icons a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 25px;
+    word-break: break-all;
+ }
+
+.social-icons  span  {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+ }
+
+.social-icons li:nth-child(2)  span {
+    background-position: -25px 0;
+ }
+
+.social-icons li:nth-child(3) span {
+    background-position: -50px 0;
+ }
+
+.social-icons li:nth-child(4) span {
+    background-position: 0 -25px;
+
+
+

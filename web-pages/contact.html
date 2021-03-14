@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<!--
+    The HTML and CSS code for the Contact form was modified from this source:
+
+        https://www.w3schools.com/howto/howto_css_contact_form.asp
+-->
+
+<html>
+	<head>
+		<title>Contact  |  Western Shore Media</title>
+		<link rel="stylesheet" href="../style-sheets/other-pages.css" />
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                padding-top: 20%;
+                padding-left: 20%;
+                padding-right: 20%;
+                background-image: url("../media/background-contact.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #003E78;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #FFF;
+                color: #003E78;
+            }
+
+            .container {
+                align-items: center;
+                padding-top: 20%;
+                padding-bottom: 10%;
+                border-radius: 5px;
+                background-color: #639FD7;
+                padding: 20px;
+                box-shadow: 5px 15px 22px rgba(0,0,0,.3);
+            }
+
+            label {
+                color: white;
+            }
+        </style>
+	</head>
+
+<div class="logo-and-menu">
+    <header>
+        <div class="header-wrapper">
+            <img class="header-background" src="../media/header/WSM_logo_background_long_narrow.jpg" />
+            <img class="header-logo" src="../media/header/WSM_logo_trans_long_narrow.png" />
+        </div>
+    </header>
+
+    <nav>
+    	<div class="navbar">
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Photography 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="galleries/gallery1-midnight-bright.html">Once Upon a Midnight Bright </a>
+                    <a href="galleries/gallery2-waiting-for-a-sign.html">Waiting for a Sign </a>
+                    <a href="galleries/gallery3-bog-below-belmullet.html">In the Bog Below Belmullet </a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Writing 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="writing/yes-equality-article.html">On Gay Marriage </a>
+                    <a href="writing/place-they-call-home.html">On Homelessness </a>
+                    <a href="writing/trust-the-process.html">On Photography </a>
+                </div>
+            </div> 
+            <a href="video.html">Video</a>
+            <a href="contact.html" style="float:right;">Contact</a>
+        </div>
+    </nav>
+</div>
+
+<body>
+
+    <h3 style="text-align: center; color: #464646;;"><u>Contact Us</u> using the form below:</h3>
+
+    <div class="container">
+        <form action="missing.html">
+            <label for="fname">First Name </label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+            <label for="lname">Last Name </label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+            <label for="country">Country </label>
+                <select id="country" name="country">
+                    <option value="ie">Ireland </option>
+                    <option value="uk">United Kingdom </option>
+                    <option value="eu">European Union </option>
+                    <option value="us">USA </option>
+                    <option value="na">other... </option>
+                </select>
+            <label for="msg">Message</label>
+            <textarea id="subject" name="subject" placeholder="Write your message here..." style="height:100px"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+</body>
+
+<footer>
+    <div class="footer-wrapper">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/">
+                <img src="../media/footer/fb-icon.png" height="40" /><span></span></a></li>
+            <li><a href="https://www.twitter.com/">
+                <img src="../media/footer/twitter-icon.png" height="40" /><span></span></a></li>
+            <li><a href="https://www.instagram.com/">
+                <img src="../media/footer/ig-icon.png" height="39" /><span></span></a></li>
+            <li><a href="https://www.youtube.com/">
+                <img src="../media/footer/yt-icon.png" height="40" /><span></span></a></li>                
+            <p id="copyright-name-logo">Copyright &copy; MMXXI Dermot O'Riordan, t/a Western Shore Media</p>
+        </ul>
+    </div>
+</footer>
+
+</html>
