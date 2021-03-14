@@ -221,7 +221,7 @@ figcaption {
 */
 
 .footer-wrapper {
-  position: absolute;
+    position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
